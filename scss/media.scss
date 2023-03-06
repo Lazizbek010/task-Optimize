@@ -1,0 +1,158 @@
+@media (max-width:1024px){
+    .main{
+        .about{
+            gap: 30px;
+            .content__title{
+                svg{
+                    display: none;
+                }
+            }
+            .content__info{
+                &__top{
+                    &__left{
+                        gap: 20px;
+                        &-img{
+                            width: 150px;
+                            height: 105px; 
+                        }
+                    }
+                    &__right{
+                        align-items: center;
+                        gap: 20px;
+                        &-map{
+                            width: 150px;
+                            height: 105px;
+                        }
+                    }
+                }
+                &-about{
+                    gap: 40px;
+                }
+            }   
+        }
+    }
+}
+
+@media (max-width:924px){
+    .main{
+        .about{
+            .content{
+                &__info{
+                    &__top{
+                        flex-wrap: wrap;
+                        gap: 30px;
+                        &__right{
+                            width: 100%;
+                            justify-content: center;
+                            &-map{
+                                width: 260px;
+                                height: 105px; 
+                            }
+                        }
+                    }
+                    &-about{
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        gap: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:650px){
+    .roboto-400{
+        font-size: 12px;
+        line-height: 17px;
+    }
+    .roboto-300{
+        font-size: 13px;
+        line-height: 160%;
+    }
+    .header{
+        padding-bottom: 15px;
+        &__top{
+            &__logo{
+                width: 134px;
+                height: 27px;
+            }
+            .lang{
+                display: none;
+            }
+            .res-lang{
+                display: flex;
+            }
+        }
+        &__bottom{
+            gap: 17px;
+            .bars img{
+                width: 25px;
+                height: 15px;
+            }
+            .search{
+                border-radius: 5px;
+                &__sel{
+                    gap: 11px;
+                    padding: 10px 10px 12px;
+                }
+                &__input{
+                    padding: 10px 10px 12px;
+                    svg{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .main{
+        .about{
+            .content{
+                &__title{
+                    margin-bottom: 10px;
+                    h1{
+                        font-size: 26px;
+                        line-height: 29px;
+                    }
+                }
+                &__desc{
+                    font-size: 12px;
+                    line-height: 160%;
+                }
+                &__info{
+                    padding: 20px;
+                    &__top{
+                        margin-bottom: 15px;
+                        &__left{
+                            gap: 15px;
+                            &-img{
+                                width: 150px;
+                                height: 105px;
+                            }
+                        }
+                        &__right{
+                            display: none;
+                            &.res{
+                                margin-top: 20px;
+                                margin-bottom: 15px;
+                                display: flex;
+                                flex-direction: column-reverse;
+                                align-items: flex-start;
+                            }
+                        }
+                    }
+                    .loc{
+                        margin-bottom: 10px;
+                        span{
+                            font-size: 14px;
+                            line-height: 22px;
+                        }
+                    }
+                    &-about{
+                        gap: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
