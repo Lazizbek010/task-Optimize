@@ -79,6 +79,7 @@
             display: none;
             align-items: center;
             gap: 15px;
+            position: relative;
             &-sel{
                 color: #1F1F24;
                 span{
@@ -92,6 +93,23 @@
                     width: 3px;
                     height: 3px;
                     background: #BCBCBE;   
+                }
+            }
+            &__options{
+                display: none;
+                position: absolute;
+                top: 120%;
+                left: 0;
+                padding:5px 10px;
+                border-radius: 5px;
+                border: 1px solid #0aa9b4;
+                background: #fff;
+                li{
+                    list-style: none;
+                    margin-bottom: 5px;
+                }
+                &.block{
+                   display: block;
                 }
             }
         }
@@ -124,12 +142,14 @@
                 }
                 &__options{
                     display: none;
-                    width: 100%;
+                    min-width: 100%;
                     top: 110%;
-                    left: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
                     position: absolute;
                     border:1px solid #0aa9b4;
-                    background: rgb(176, 250, 255);
+                    background: #fff;
+                    padding: 10px;
                     padding: 15px;
                     border-radius: 10px;
                     li{
@@ -401,7 +421,7 @@
         }
         .sitebar{
             &__img{
-                background: #E9E9EA;
+                background: url('https://picsum.photos/400/600');
                 border-radius: 10px;
                 width: 200px;
                 height: 100%;
